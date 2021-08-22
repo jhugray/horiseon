@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
-/* if 0, likely do not need to define */
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
-/* add body to * selector */
+
+/* DONE color changed to white used elsewhere to be */
 body {
-    background-color: #d9dcd6;
+    background-color: #ffffff;
+    font-size: 16px;
 }
 
 .header {
@@ -15,47 +16,55 @@ body {
     background-color: #2a607c;
     color: #ffffff;
 }
-/* two shades of white used ... is there a visual difference? if not, best to stick with one white */
+/* DONE two shades of white used ... is there a visual difference? if not, best to stick with one white */
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-/*  seo class may be unnecessary? add color to .header h1 class? */
+ /* DONE seo class may be unnecessary? add color to .header h1 class?
 .header h1 .seo {
     color: #d9dcd6;
+} */
+
+/* DONE added ".header a" selector and removed "a" selector*/
+.header a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    /* calibri is missing ' '  */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* DONE calibri is missing ' '  */
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/* is this needed? */
-.header div ul {
+/* DONE (No it is not) is this needed? */
+/* .header div ul {
     list-style-type: none;
-}
+} */
 
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
  
-/*  is this needed? */
-a {
+/* DONE put anchor details under header anchor */
+/* a {
     color: #ffffff;
     text-decoration: none;
-}
-/* is this needed? */
-p {
-    font-size: 16px;
-}
+} */
 
-/* see if height/width should be same unit */
-.hero {
+/* DONE is this needed? add to body */
+/* p {
+    font-size: 16px;
+} */
+
+
+/* DONE name clarified to hero-image not just hero so that the code is clear as to what it is */
+.hero-image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -78,7 +87,7 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
+} 
 
 .benefits {
     margin-right: 20px;
@@ -87,15 +96,23 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    /* calibri is missing ' '  */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* DONE calibri is missing ' '  */
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/*  below 3 classes likely can be combined */
-.benefit-lead {
+
+
+ /* DONE below 3 classes likely can be combined */
+
+ .benefit-content {
     margin-bottom: 32px;
     color: #ffffff;
-}
+} 
+
+/* .benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+} 
 
 .benefit-brand {
     margin-bottom: 32px;
@@ -105,16 +122,22 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+}  */
 
-/* below 3 classes likely can be combined */
+/* DONE below 3 classes likely can be combined */
 
-.benefit-lead h3 {
+.benefit-content h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
+
+/* .benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+} */
+
+/* .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -122,10 +145,17 @@ p {
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
+} */
+
+/* DONE combine below 3 classes */
+
+.benefit-content img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-/* combine below 3 classes */
-.benefit-lead img {
+/* .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -141,15 +171,26 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
+} */
 
-/* combine below 3 classes */
+/* DONE - combine below 3 classes */
+
+.content-box{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    /* DONE - calibri is missing ' '  */
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* 
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     /* calibri is missing ' '  */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
@@ -157,9 +198,9 @@ p {
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 300px; */
     /* calibri is missing ' '  */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
@@ -167,16 +208,20 @@ p {
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 300px; */
     /* calibri is missing ' '  */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+} */ 
+
+/* DONE combine below 3 classes */
+
+.content-box img {
+    max-height: 200px;
 }
 
-/* combine below 3 classes */
-
-.search-engine-optimization img {
+/* .search-engine-optimization img {
     max-height: 200px;
 }
 
@@ -186,11 +231,16 @@ p {
 
 .social-media-marketing img {
     max-height: 200px;
+} */
+
+
+/* DONE below 3 classes can be combined  */
+
+.content-box h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
-
-
-/* below 3 classes can be combined  */
-.search-engine-optimization h2 {
+/* .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -203,9 +253,9 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
+} */
 
-/* combine 2 classes */
+
 .footer {
     padding: 30px;
     clear: both;
@@ -213,6 +263,7 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/* DONE updated to be h4 not h2 */
+.footer h4 {
     font-size: 20px;
 }

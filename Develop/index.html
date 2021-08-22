@@ -1,20 +1,23 @@
+<!-- different boxes do not line up well -->
+
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- change title to be more descriptive -->
-    <title>website</title> 
+    <!-- DONE change title to be more descriptive -->
+    <title>Horiseon</title> 
 </head>
 
 <body>
     <div class="header">
-        <!-- what is the function of this seo span-->
-        <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- DONE (SEO SPAN DELETED) what is the function of this seo span-->
+        <h1>Horiseon</h1>
         <div>
             <ul>
                 <li>
+                    <!-- DONE - id added below to fix broken link -->
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
@@ -26,66 +29,68 @@
             </ul>
         </div>
     </div>
-    <!-- what is this hero div achieving? -->
-    <div class="hero"></div>
+    <!-- DONE - what is this hero div achieving? ...it is the hero photo... class name clarified-->
+    <div class="hero-image"></div>
     <div class="content">
-        <!-- the below class is very specific, better used as an id? or other below ids/classes merged? -->
-        <!-- images below x3 need alt's -->
-        <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+        <!-- DONE the below class is very specific,below classes merged -->
+        <!-- DONE images below x3 need alt's -->
+        <!-- DONE id added for seo to fix broken link from header list -->
+        <div id= "search-engine-optimization" class="content-box"> 
+            <img src="./assets/images/search-engine-optimization.jpg" alt= "note pad on a desk with s-e-o writted on it" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+        <div id="online-reputation-management" class="content-box">
+            <img src="./assets/images/online-reputation-management.jpg" alt="open laptop being typed on, the screen shows the text reputation with graphs" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+        <div id="social-media-marketing"  class="content-box">
+            <img src="./assets/images/social-media-marketing.jpg" alt="table with multiple hands shown working, floating social media though bubbles and icons shown" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </div>
     </div>
-    <!-- images x3 below need alts -->
-    <!-- can the below classes be combined, and is div class "benefits" performing a useful function -->
+    <!-- DONE ** images x3 below need alts...torn between "" due to minimal value added by the icons but decided to add detailed alt to be safe -->
+    <!-- DONE can the below classes be combined -->
     <div class="benefits">
-        <div class="benefit-lead">
+        <div class="benefit-content">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <img src="./assets/images/lead-generation.png" alt="black icon of gear funneling to a dollar sign" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </div>
-        <div class="benefit-brand">
+        <div class="benefit-content">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <img src="./assets/images/brand-awareness.png" alt="black icon of a torso with a lightbulb for a head" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </div>
-        <div class="benefit-cost">
+        <div class="benefit-content">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png"></img>
+            <!-- DONE img tag can be combined...seperate close tag not needed -->
+            <img src="./assets/images/cost-management.png" alt="black icon of a gear with three dollar signs" />
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
         </div>
     </div>
+
     <div class="footer">
-        <!-- h2 should be h3 or h4 as there is an h3 above this  -->
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <!-- paragraph tag unnecessay -->
-        <p>
+        <!-- DONE h2 should be h3 or h4 as there is an h3 above this  -->
+        <h4>Made with ❤️️ by Horiseon</h4>
+        <!-- DONE paragraph tag unnecessay -->
             &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
     </div>
+
 </body>
 
 </html>
