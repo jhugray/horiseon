@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
+/* if 0, likely do not need to define */
     padding: 0;
     margin: 0;
 }
-
+/* add body to * selector */
 body {
     background-color: #d9dcd6;
 }
@@ -14,12 +15,13 @@ body {
     background-color: #2a607c;
     color: #ffffff;
 }
+/* two shades of white used ... is there a visual difference? if not, best to stick with one white */
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/*  seo class may be unnecessary? add color to .header h1 class? */
 .header h1 .seo {
     color: #d9dcd6;
 }
@@ -28,10 +30,11 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
+    /* calibri is missing ' '  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* is this needed? */
 .header div ul {
     list-style-type: none;
 }
@@ -40,16 +43,18 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
-
+ 
+/*  is this needed? */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* is this needed? */
 p {
     font-size: 16px;
 }
 
+/* see if height/width should be same unit */
 .hero {
     height: 800px;
     width: 100%;
@@ -82,10 +87,11 @@ p {
     float: right;
     width: 20%;
     height: 100%;
+    /* calibri is missing ' '  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/*  below 3 classes likely can be combined */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -100,6 +106,8 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
+
+/* below 3 classes likely can be combined */
 
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -116,6 +124,7 @@ p {
     text-align: center;
 }
 
+/* combine below 3 classes */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -134,10 +143,12 @@ p {
     max-width: 150px;
 }
 
+/* combine below 3 classes */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    /* calibri is missing ' '  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -147,6 +158,7 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    /* calibri is missing ' '  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -156,10 +168,13 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    /* calibri is missing ' '  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
+
+/* combine below 3 classes */
 
 .search-engine-optimization img {
     max-height: 200px;
@@ -173,6 +188,8 @@ p {
     max-height: 200px;
 }
 
+
+/* below 3 classes can be combined  */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -188,6 +205,7 @@ p {
     font-size: 36px;
 }
 
+/* combine 2 classes */
 .footer {
     padding: 30px;
     clear: both;
