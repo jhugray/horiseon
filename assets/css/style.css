@@ -48,12 +48,12 @@ header nav ul li {
     background-position: center;
 }
 
-.float-left {
+.odd-img {
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+.even-img {
     float: right;
     margin-left: 25px;
 }
@@ -91,7 +91,7 @@ header nav ul li {
     max-width: 150px;
 }
 
-.content-box{
+.content section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -100,11 +100,11 @@ header nav ul li {
     color: #ffffff;
 }
 
-.content-box img {
+.content section img {
     max-height: 200px;
 }
 
-.content-box h2 {
+.content section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
