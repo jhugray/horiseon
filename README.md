@@ -8,7 +8,7 @@ A website that offers services for search engine optimization (SEO), social medi
 * CSS
 
 ## Website
-https://jhugray.github.io/horsieon/
+https://jhugray.github.io/horiseon/
 
 ![image](https://user-images.githubusercontent.com/59127869/131232672-ecf3c086-5d0d-4005-8bcb-c364969d48ed.png)
 
